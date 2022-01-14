@@ -5,9 +5,6 @@
     box-sizing: border-box;
 }
 
-
-/* Header */
-
 header {
     align-content: space-between;
     font-family: 'Poppins';
@@ -64,15 +61,6 @@ li:hover .list-nav-projet {
     display: block;
 }
 
-.list-nav-projet {
-    -webkit-transition: opacity 1s ease-in;
-    -moz-transition: opacity 1s ease-in;
-    -o-transition: opacity 1s ease-in;
-    transition: opacity 1s ease-in;
-    opacity: 0;
-    height: 0;
-}
-
 .list-nav-projet li a {
     font-size: 18px;
     text-transform: capitalize;
@@ -96,9 +84,6 @@ li:hover .list-nav-articles {
     padding-top: 25px;
     background-color: transparent;
 }
-
-
-/* Images */
 
 img:hover {
     opacity: 0.6;
