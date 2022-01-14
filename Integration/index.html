@@ -7,22 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Wacil Zekraoui">
     <meta name="description" content="Ceci est un potfolio codé en HTML pour l'école de DonkeySchool.">
+    <link rel="stylesheet" href="style.css">
     <title>Mon Portfolio</title>
 </head>
 
 <body>
     <header>
         <h1>Mon Portfolio</h1>
-        <nav>
-            <ul>
+        <nav class="navigation">
+            <ul class="list-nav">
                 <li>
-                    <a href="#">projects</a>
+                    <a href="#">projets</a>
+                    <ul class="list-nav-projet">
+                        <li><a href="#">projet 1</a></li>
+                        <li><a href="#">projet 2</a></li>
+                        <li><a href="#">projet 3</a></li>
+                    </ul>
                 </li>
                 <li>
                     <a href="#">études</a>
                 </li>
                 <li>
                     <a href="#">articles</a>
+                    <ul class="list-nav-articles">
+                        <li><a href="#">article 1</a></li>
+                        <li><a href="#">article 2</a></li>
+                    </ul>
                 </li>
                 <li>
                     <a href="#">contact</a>
@@ -31,106 +41,116 @@
         </nav>
     </header>
     <main>
-        <a href="https://placeholder.com">nom prénom<img src="https://via.placeholder.com/500x350" alt="Image main"></a>
+        <section>
+            <div class="content__titre__placeholder">
+                <h3>nom prénom</h3>
+            </div>
+            <div class="placeholder">
+                <a class="placeholder__name" href="https://placeholder.com"><img src="https://via.placeholder.com/500x350" alt="Image main"></a>
+            </div>
+        </section>
+        <section>
+            <div class="content__titre__projet">
+                <h2>projets réalisés</h2>
+            </div>
+            <div class="content__projets">
+                <div class="projet1">
+                    <a href="https://placeholder.com"><img src="https://via.placeholder.com/250/00000" alt="Image du projet 1"></a>
+                    <h3>projet 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit esse necessitatibus, laudantium at sequi ipsam officia facilis quibusdam nobis mollitia possimus repudiandae, earum perferendis explicabo quas maxime qui, tempore enim?</p>
+                    <button>en savoir plus</button>
+                </div>
+                <div class="projet2">
+                    <a href="https://placeholder.com"><img src="https://via.placeholder.com/250" alt="Image du projet 2"></a>
+                    <h3>projet 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit esse necessitatibus, laudantium at sequi ipsam officia facilis quibusdam nobis mollitia possimus repudiandae, earum perferendis explicabo quas maxime qui, tempore enim?</p>
+                    <button>en savoir plus</button>
+                </div>
+                <div class="projet3">
+                    <a href="https://placeholder.com"><img src="https://via.placeholder.com/250" alt="Image du projet 3"></a>
+                    <h3>projet 3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit esse necessitatibus, laudantium at sequi ipsam officia facilis quibusdam nobis mollitia possimus repudiandae, earum perferendis explicabo quas maxime qui, tempore enim?</p>
+                    <button>en savoir plus</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="content__titre__etudes">
+                <h2>études</h2>
+            </div>
+            <div class="content__info__profile">
+                <i class="fas fa-user"></i>
+                <div class="info__profile">
+                    <h4>nom</h4>
+                    <h4>prénom</h4>
+                    <h4>age</h4>
+                    <h4>adresse email</h4>
+                    <h4>numéro de téléphone</h4>
+                </div>
+            </div>
+            <div class="content__profile">
+                <div class="date1">
+                    <h3>Date</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nostrum laudantium maiores magnam voluptatum officia? Velit ut est quibusdam nobis. Saepe, non? Quia corrupti eum expedita officia laboriosam quisquam ipsum?</p>
+                </div>
+                <div class="date2">
+                    <h3>Date</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt adipisci dicta deleniti ipsum atque, mollitia, rerum officia id, nam eaque aliquid sit optio quae! Nam porro tempora libero possimus quia.</p>
+                </div>
+                <div class="date3">
+                    <h3>Date</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum iste vitae quibusdam aliquid autem sit reprehenderit debitis, dolor consectetur, itaque vel, molestias labore recusandae distinctio ullam ea sint officia odit?</p>
+                </div>
+                <div class="date4">
+                    <h3>Date</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, facere sapiente enim rerum asperiores numquam! At reiciendis ad doloremque distinctio, iusto placeat consequuntur, assumenda molestias facilis animi nostrum ipsa iure!</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="content__titre__articles">
+                <h2>articles</h2>
+            </div>
+            <div class="content__articles">
+                <div class="article1">
+                    <a href="https://placeholder.com"><img src="https://via.placeholder.com/300x200" alt="Première article"></a>
+                    <h4>Article 1</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda saepe dolore error recusandae quia sed facere possimus dolores, voluptatem itaque optio, in nemo dolor vero autem impedit ab explicabo libero.</p>
+                    <button>lire</button>
+                    <button>33 commentaires</button>
+                </div>
+                <div class="article2">
+                    <a href="https://placeholder.com"><img src="https://via.placeholder.com/300x200" alt="Deuxième article"></a>
+                    <h4>Article 2</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda saepe dolore error recusandae quia sed facere possimus dolores, voluptatem itaque optio, in nemo dolor vero autem impedit ab explicabo libero.</p>
+                    <button>lire</button>
+                    <button>33 commentaires</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="content__titre__contact">
+                <h2>contact</h2>
+            </div>
+            <div class="content__input">
+                <div class="name__input">
+                    <label for="name">nom</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="email__input">
+                    <label for="email">E mail:</label>
+                    <input type="email" id="email">
+                </div>
+                <div class="message__input">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" cols="33"></textarea>
+                </div>
+                <div class="button">
+                    <input type="button" value="Envoyer" class="button">
+                </div>
+            </div>
+        </section>
     </main>
-    <div class="container__projet">
-        <div class="content__titre__projet">
-            <h2>projets réalisés</h2>
-        </div>
-        <div class="content__projets">
-            <div class="projet1">
-                <a href="https://placeholder.com"><img src="https://via.placeholder.com/250" alt="Image du projet 1"></a>
-                <h3>projet 1</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit esse necessitatibus, laudantium at sequi ipsam officia facilis quibusdam nobis mollitia possimus repudiandae, earum perferendis explicabo quas maxime qui, tempore enim?</p>
-                <button>en savoir plus</button>
-            </div>
-            <div class="projet2">
-                <a href="https://placeholder.com"><img src="https://via.placeholder.com/250" alt="Image du projet 2"></a>
-                <h3>projet 2</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit esse necessitatibus, laudantium at sequi ipsam officia facilis quibusdam nobis mollitia possimus repudiandae, earum perferendis explicabo quas maxime qui, tempore enim?</p>
-                <button>en savoir plus</button>
-            </div>
-            <div class="projet3">
-                <a href="https://placeholder.com"><img src="https://via.placeholder.com/250" alt="Image du projet 3"></a>
-                <h3>projet 3</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit esse necessitatibus, laudantium at sequi ipsam officia facilis quibusdam nobis mollitia possimus repudiandae, earum perferendis explicabo quas maxime qui, tempore enim?</p>
-                <button>en savoir plus</button>
-            </div>
-        </div>
-    </div>
-    <div class="container__etudes">
-        <div class="content__titre__etudes">
-            <h2>études</h2>
-        </div>
-        <div class="content__info__profile">
-            <i class="fas fa-user"></i>
-            <div class="info__profile">
-                <h4>nom</h4>
-                <h4>prénom</h4>
-                <h4>age</h4>
-                <h4>adresse email</h4>
-                <h4>numéro de téléphone</h4>
-            </div>
-        </div>
-        <div class="content__profile">
-            <div class="date1">
-                <h3>Date</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nostrum laudantium maiores magnam voluptatum officia? Velit ut est quibusdam nobis. Saepe, non? Quia corrupti eum expedita officia laboriosam quisquam ipsum?</p>
-            </div>
-            <div class="date2">
-                <h3>Date</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt adipisci dicta deleniti ipsum atque, mollitia, rerum officia id, nam eaque aliquid sit optio quae! Nam porro tempora libero possimus quia.</p>
-            </div>
-            <div class="date3">
-                <h3>Date</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum iste vitae quibusdam aliquid autem sit reprehenderit debitis, dolor consectetur, itaque vel, molestias labore recusandae distinctio ullam ea sint officia odit?</p>
-            </div>
-            <div class="date4">
-                <h3>Date</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, facere sapiente enim rerum asperiores numquam! At reiciendis ad doloremque distinctio, iusto placeat consequuntur, assumenda molestias facilis animi nostrum ipsa iure!</p>
-            </div>
-        </div>
-    </div>
-    <div class="container__articles">
-        <div class="content__titre__articles">
-            <h2>articles</h2>
-        </div>
-        <div class="content__articles">
-            <div class="article1">
-                <a href="https://placeholder.com"><img src="https://via.placeholder.com/300x200" alt="Première article"></a>
-                <h4>Article 1</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda saepe dolore error recusandae quia sed facere possimus dolores, voluptatem itaque optio, in nemo dolor vero autem impedit ab explicabo libero.</p>
-                <button>lire</button>
-                <button>33 commentaires</button>
-            </div>
-            <div class="article2">
-                <a href="https://placeholder.com"><img src="https://via.placeholder.com/300x200" alt="Deuxième article"></a>
-                <h4>Article 2</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda saepe dolore error recusandae quia sed facere possimus dolores, voluptatem itaque optio, in nemo dolor vero autem impedit ab explicabo libero.</p>
-                <button>lire</button>
-                <button>33 commentaires</button>
-            </div>
-        </div>
-    </div>
-    <div class="container__contact">
-        <div class="content__titre__contact">
-            <h2>contact</h2>
-        </div>
-        <div class="content__input">
-            <div class="name__input">
-                <label for="name">nom</label>
-                <input type="text" id="name" name="name">
-            </div>
-            <div class="email__input">
-                <label for="email">E mail:</label>
-                <input type="email" id="email">
-            </div>
-            <div class="message__input">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" cols="33"></textarea>
-            </div>
-        </div>
-    </div>
     <footer>
         <h3>monportfolio.me</h3>
     </footer>
